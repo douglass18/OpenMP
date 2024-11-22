@@ -8,7 +8,12 @@
 .kshrc
 .local
 .vscode-server
+.lesshst
 ejercicios/carga_trabajo
 ejercicios/carga_trabajo_p
 num_hilos
 num_hilos_p
+reparto
+reparto_p
+sincro
+sincro_p

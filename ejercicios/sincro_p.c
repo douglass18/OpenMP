@@ -53,8 +53,8 @@ void main ()
   #pragma omp critical
   {
     suma = suma + sumaL;
-    if(max < maxL){ max = maxL; maxpos = maxposL;}
-    if (min > minL) { min = minL; minpos = minposL;}
+    if(max < maxL || (max == maxL && maxpos > maxposL)){ max = maxL; maxpos = maxposL;}
+    if (min > minL ||(min == minL && minpos > minposL)) { min = minL; minpos = minposL;}
   }
   #pragma omp barrier 
 
